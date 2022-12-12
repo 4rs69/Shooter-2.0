@@ -1517,6 +1517,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4405915310296802, guid: 2f5811962b2c9c241b40465de1f9d338, type: 3}
   m_PrefabInstance: {fileID: 1844050255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &939649939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3796587196157158599, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
+  m_PrefabInstance: {fileID: 2061121971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &953232205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4405915310296802, guid: 2f5811962b2c9c241b40465de1f9d338, type: 3}
@@ -1718,17 +1723,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5628545, y: 0.2000002, z: 1.5454273}
   m_Center: {x: -0.0000013113022, y: 0.099999994, z: 0.0000009536743}
---- !u!114 &1031317259 stripped
+--- !u!114 &1031317263
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3385599165919045928, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
-  m_PrefabInstance: {fileID: 2061121971}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 939649939}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710b1e5e795e8b94e8ad3cd63dcdb99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mouseSensivity: 1000
+  _player: {fileID: 2076920515}
 --- !u!1 &1072751142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,7 +3813,7 @@ PrefabInstance:
     - target: {fileID: 3691882896771439649, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
       propertyPath: _camera
       value: 
-      objectReference: {fileID: 1031317259}
+      objectReference: {fileID: 0}
     - target: {fileID: 3796587196157158599, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
       propertyPath: m_TagString
       value: MainCamera
@@ -4082,7 +4090,8 @@ PrefabInstance:
       propertyPath: _currentHealth
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3385599165919045928, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
 --- !u!1 &2076920474 stripped
@@ -4154,6 +4163,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!4 &2076920515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4457327647328492906, guid: 28e33b7b113fcc74f87068f8a83d3e63, type: 3}
+  m_PrefabInstance: {fileID: 2061121971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2111557572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1801484294960248, guid: c3fc861d491ff2a4ead81ab33146571f, type: 3}
